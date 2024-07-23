@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: rgb(218, 213, 213);
+}
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 500px;
+}
+.card img{
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.card .img-wrapper{
+    position: relative;
+}
+.card .img-wrapper span{
+    background-color: yellow;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+.card-title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.card-title h6{
+    font-weight: 700;
+    font-size: 18px;
+}
+.card-title-wrapper span{
+    background-color: yellow;
+    color: #000;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+.Error{
+    position: absolute;
+    top: 40%;
+    left: 46%;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #000 #0000;
+    animation: l1 1s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  @keyframes l1 {to{transform: rotate(.5turn)}}
